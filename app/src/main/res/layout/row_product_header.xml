@@ -1,0 +1,48 @@
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:background="@drawable/table_row_last_bg"
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout  android:layout_width="0dp" android:layout_weight="1" android:layout_margin="2dp"
+        android:layout_height="match_parent">
+        <TextView  android:text="@string/ProductName"
+            android:background="@drawable/table_cell_bg" android:textSize="18sp"
+            android:layout_width="0dp" android:layout_weight="1.5"
+            android:gravity="center" android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView  android:text="@string/treatment"
+            android:background="@drawable/table_cell_bg"
+            android:layout_width="0dp" android:layout_weight="0.9"
+            android:gravity="center" android:textStyle="bold" android:textSize="18sp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView  android:text="@string/Quantity"
+            android:layout_width="0dp" android:layout_weight="0.9" android:textSize="18sp"
+            android:gravity="center" android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_cell_bg"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView  android:text="@string/CurrentQuantity"
+            android:layout_width="0dp" android:layout_weight="0.9"
+            android:textSize="18sp"
+            android:gravity="center" android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_cell_bg"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView  android:text="@string/DirtyQTY"
+            android:layout_width="0dp" android:layout_weight="0.9"
+            android:textSize="18sp"
+            android:gravity="center" android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_cell_bg"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</TableRow>

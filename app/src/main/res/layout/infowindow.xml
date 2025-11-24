@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#80000000"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight=".6">
+            <LinearLayout
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout android:layout_weight="0.9"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/lbl_areaName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/CardNo" android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2" android:textColor="@color/solid_white"
+                        android:id="@+id/tv_cardno"
+                        />
+                </LinearLayout>
+                <LinearLayout android:layout_weight="2"
+
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/lbl_Priority"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/Priority" android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content" android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_priority"
+                        android:textColor=
+                        "@color/solid_white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp" android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/lbl_custName"
+                    android:layout_width="wrap_content" android:textSize="18sp"
+
+                    android:layout_height="wrap_content"
+                    android:text="@string/CustomerName"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView android:textColor=
+                    "@color/solid_white"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_custName"
+                    android:maxLines="2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/lbl_contractCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/STREET_NAME" android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView android:textColor=
+                    "@color/solid_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="18sp"
+                    android:id="@+id/tv_streetname"
+                    android:maxLines="2" /></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FU_Note"
+                    android:paddingLeft="10dp" android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/solid_white"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_custAdd" android:textSize="18sp"
+                    android:maxLines="2" /></LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+    </LinearLayout>

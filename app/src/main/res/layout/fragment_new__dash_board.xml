@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="5dp"
+    tools:context="com.mts.mea.nodust_app.DashBoard.new_DashBoard">
+    <android.support.v7.widget.CardView  android:padding="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  android:background="@drawable/border_red">
+        <LinearLayout android:orientation="vertical" android:layout_margin="5dp"
+            android:layout_width="match_parent" android:padding="5dp"
+            android:layout_height="match_parent"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/ic_pilot"/>
+                <TextView android:layout_gravity="center" android:textSize="18sp" android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_pilotName" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent" android:layout_marginTop="30dp"
+    android:layout_height="wrap_content" android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal|bold" android:textSize="18sp"
+        android:text="@string/NOAssignment"  android:layout_weight="1" />
+    <TextView android:textSize="18sp"
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="wrap_content" android:id="@+id/tv_noAssig"/>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginTop="30dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:text="@string/NoDone"  android:layout_weight="1" />
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:id="@+id/tv_noDone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginTop="30dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark" android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:text="@string/NoPartial"  android:layout_weight="1" />
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:id="@+id/tv_noPartial"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginTop="30dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent" android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:text="@string/NoNotDone"  android:layout_weight="1" />
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:id="@+id/tv_noNotDone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_marginTop="30dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:text="@string/NoPending"  android:layout_weight="1" />
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:id="@+id/tv_noPending"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_amount"
+                android:layout_width="match_parent" android:layout_marginTop="30dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"
+                    android:text="@string/amountMoney"
+                    android:layout_weight="1" />
+                <TextView android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:id="@+id/tv_amountMoney"/>
+            </LinearLayout>
+            <TableLayout android:id="@+id/tab_product"
+                android:stretchColumns="*" android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp" android:paddingRight="2dp"
+                    android:paddingLeft="2dp"
+                    android:background="@drawable/table_row_bg"
+                    >
+                    <LinearLayout  android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView  android:text="@string/ProductName"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_width="0dp" android:layout_weight="2"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView  android:text="@string/Quantityclean"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_width="0dp" android:layout_weight="0.9"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView  android:text="@string/QuantityDirty"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_width="0dp" android:layout_weight="0.9"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView  android:text="@string/treatment"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_width="0dp" android:layout_weight="0.9"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

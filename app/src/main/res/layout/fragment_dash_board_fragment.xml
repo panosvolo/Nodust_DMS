@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mts.mea.nodust_app.orders.GetOrders.DashBoard_fragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <LinearLayout android:layout_margin="4dp" android:padding="2dp"
+        android:id="@+id/ll_dash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal" >
+        <LinearLayout android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/border_red" >
+            <TextView android:gravity="center" android:textSize="18sp" android:textStyle="bold"
+                android:layout_width="match_parent" android:text="@string/Pilots"
+                android:layout_height="wrap_content" android:layout_weight="1" />
+            <TextView android:id="@+id/tv_noPilots"
+                android:gravity="center" android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/BackgroundLogin"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1" android:background="@drawable/border_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+            <TextView android:gravity="center" android:textSize="18sp" android:textStyle="bold"
+                android:layout_width="match_parent" android:text="@string/myTasks"
+                android:layout_height="wrap_content" android:layout_weight="1" />
+            <TextView android:gravity="center" android:id="@+id/tv_myOrders"
+                android:layout_width="match_parent" android:textSize="18sp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/BackgroundLogin"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1" android:background="@drawable/border_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:gravity="center" android:textSize="18sp" android:textStyle="bold"
+                android:layout_width="match_parent" android:text="@string/PilotsOrders"
+                android:layout_height="wrap_content" android:layout_weight="1" />
+            <TextView android:gravity="center"
+                android:layout_width="match_parent"  android:textColor="@color/BackgroundLogin"
+                android:id="@+id/tv_pOrders" android:textSize="18sp"
+                android:layout_height="wrap_content" android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+      <ExpandableListView android:id="@+id/exp_lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ExpandableListView>
+
+</LinearLayout>
+</FrameLayout>

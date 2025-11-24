@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_Profile"
+            android:icon="@drawable/icn_user"
+            android:title="@string/Profile" />
+        <item android:id="@+id/ChangePassword"
+            android:title="@string/ChangePass"
+            android:icon="@drawable/ic_cust_name"/>
+        <item android:id="@+id/PayRoll"
+            android:title="@string/Payroll"
+            android:icon="@drawable/ic_cust_name"/>
+        <item
+            android:id="@+id/action_complain"
+            android:icon="@drawable/ic_output"
+            android:title="@string/Complains" />
+
+        <item
+            android:id="@+id/action_settle_output"
+            android:icon="@drawable/ic_output"
+            android:title="@string/myAreas" />
+
+           <item android:id="@+id/action_vacation"
+            android:icon="@drawable/ic_pilot"
+            android:title="@string/Vacations"/>
+        <item android:id="@+id/action_Refresh"
+            android:icon="@drawable/ic_refresh"
+            android:title="@string/ReFresh"/>
+
+    </group>
+
+</menu>

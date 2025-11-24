@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minHeight="200dp" android:minWidth="500dp"
+
+    android:padding="5dp" android:layout_height="match_parent" android:background="@drawable/border_red">
+   <TextView android:id="@+id/tv_pilotName"
+       android:layout_width="match_parent"
+       android:textColor="@color/colorPrimaryDark"
+       android:textStyle="normal|bold"
+       android:layout_height="wrap_content"
+       android:gravity="center" android:text="@string/Evalution"/>
+    <CheckBox android:text="@string/uniformCode"
+        android:id="@+id/ch_uniformCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <CheckBox android:text="@string/Hygiene"
+        android:id="@+id/ch_Hygiene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox android:text="@string/Appearance"
+        android:layout_width="match_parent"
+        android:id="@+id/ch_Apperance"
+        android:layout_height="wrap_content" />
+    <CheckBox android:text="@string/Presentation"
+        android:id="@+id/ch_Presentation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox android:text="@string/ArrivalinTime"
+        android:id="@+id/ch_Arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content" android:layout_gravity="center"
+        android:text="@string/Send" android:textAllCaps="false" android:padding="15dp"
+        android:gravity="center"
+        android:id="@+id/btn_sendEvalution"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal"
+        android:background="@drawable/round_border_btn"/>
+</LinearLayout>

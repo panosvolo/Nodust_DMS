@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/action_vacation"
+            android:icon="@drawable/ic_pilot"
+            android:title="@string/Vacations"/>
+        <item android:id="@+id/action_Refresh"
+            android:icon="@drawable/ic_refresh"
+            android:title="@string/ReFresh"/>
+
+    </group>
+
+</menu>

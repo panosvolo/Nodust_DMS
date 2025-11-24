@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:background="@drawable/table_row_bg"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" >
+        <TextView  android:text="@string/Invoice_NO"
+            android:background="@drawable/table_cell_bg"
+            android:layout_width="0dp" android:layout_weight="1.2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView  android:text="@string/date" android:gravity="center"
+            android:background="@drawable/table_cell_bg"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView  android:text="@string/Price" android:gravity="center"
+            android:background="@drawable/table_cell_bg"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText  android:hint="@string/Paid" android:id="@+id/tv_paid"
+            android:background="@drawable/border_red"
+            android:layout_width="0dp" android:layout_weight="0.9"
+            android:gravity="center"
+            android:layout_height="match_parent" android:digits="0123456789."
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+      </TableRow>
+

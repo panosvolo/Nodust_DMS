@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mts.mea.nodust_app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.mts.mea.nodust_app.Application.ApplicationControl"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mts.mea.nodust_app.Login.loginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.ShowDetailsOrder.OrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name="com.mts.mea.nodust_app.BackgroundServices.GetCurrentLocaion"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.GetOrders.HomeWithMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+           />
+        <activity
+            android:name="com.mts.mea.nodust_app.common.langaugeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.common.AlertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.Pilots.Pilot_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.GetOrders.Today_OutputActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.GetOrders.TodayDetailsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.AREA.CHOOSE_AREA"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.Vacation.Vacationlist_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.Vacation.VacationAdd_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mts.mea.nodust_app.Vacation.ShowVacationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.mts.mea.nodust_app.User.User_Profile" />
+        <activity android:name="com.mts.mea.nodust_app.User.Change_Password" />
+        <activity android:name="com.mts.mea.nodust_app.User.Payroll_activity" />
+        <activity android:name="com.mts.mea.nodust_app.orders.ShowDetailsOrder.Collection_Order" />
+        <activity android:name="com.mts.mea.nodust_app.User.Complain_activity" />
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.ShowDetailsOrder.CollectionOrderDetails"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.mts.mea.nodust_app.orders.ShowDetailsOrder.Routing_map"
+            android:label="@string/title_activity_routing_map"></activity>
+    </application>
+
+</manifest>

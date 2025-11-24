@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D70100</color>
+    <color name="colorPrimaryDark">#D70100</color>
+    <color name="colorAccent">#646566</color>
+    <color name="colorBlack">#000000</color>
+    <color name="BackgroundLogin">#1B394D</color>
+    <color name="colorBtn">#EFEAF0</color>
+    <color name="Orange">#E35B1F</color>
+    <color name="solid_white">#ffffff</color>
+     <color name="transparent">#00FFFFFF</color>
+    <color name="gold">#FFD700</color>
+    <color name="deliver">#00b300</color>
+    <color name="TaskNotDeliver">#c2c2a3</color>
+    <color name="HighestPriority">#c68c53</color>
+</resources>

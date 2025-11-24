@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.mts.mea.nodust_app.Login.loginActivity"
+    android:orientation="vertical" android:paddingBottom="100dp">
+    <LinearLayout android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:layout_gravity="center"  android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_gravity="center" android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:background="@drawable/newlogo"
+            android:layout_height="70dp"
+            android:layout_marginBottom="100dp" />
+        <TextView android:gravity="center"
+          android:id="@+id/tv_version" android:textStyle="bold"
+            android:textDirection="anyRtl"
+            android:textColor="@android:color/white"
+            android:theme="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/UserName"
+            android:textDirection="anyRtl"
+            android:textColor="@android:color/white"
+            android:theme="@style/textBox"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:inputType= "number"
+
+            />
+    <!-- Password Label -->
+
+        <EditText android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:inputType= "number"
+            android:textColor="@android:color/white"
+            android:hint="@string/password"
+            android:theme="@style/textBox"
+            android:gravity="center"
+            android:layout_margin="30dp"
+
+            />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_margin="30dp"
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="@string/Login"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/round_btn"
+        />
+
+         </LinearLayout>
+
+</RelativeLayout>
+
+

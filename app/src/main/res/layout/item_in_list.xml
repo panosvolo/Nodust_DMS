@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/border_red"
+    android:padding="2dp"
+    >
+
+    <android.support.v7.widget.CardView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:visibility="gone"
+                android:id="@+id/iv_Task_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:minWidth="64dp"
+                android:padding="10dp"
+                android:background="@drawable/ic_task"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight=".6" >
+                <LinearLayout android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+                    <TextView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:text="@string/ContractCode"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_assDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|right"
+                        android:text="@string/AssignDate"
+                        android:layout_weight="1.8"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/lbl_assID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AssignID"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_assID"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/ly_repCard"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_margin="2dp"
+                        android:layout_gravity="top|right">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_star"
+                            app:backgroundTint="@android:color/holo_red_dark"
+                            app:itemIconTint="@android:color/holo_red_dark"
+                            android:id="@+id/floatingActionButton" />
+
+
+                    </FrameLayout>
+                    <TextView  android:layout_marginTop="2dp" android:layout_gravity="center"
+                        android:layout_width="wrap_content" android:textColor="@android:color/holo_orange_dark"
+                        android:layout_height="wrap_content" android:layout_margin="2dp" android:id="@+id/tv_textrep"
+                        android:text="@string/RepetedCardNo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout android:layout_weight="0.6"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lbl_areaName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/CardNo" android:textSize="18sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal|bold"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:textSize="18sp"
+                            android:layout_height="wrap_content" android:maxLines="2"
+                            android:id="@+id/tv_cardno"
+                            />
+                    </LinearLayout>
+                    <LinearLayout android:layout_weight="2"
+
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/lbl_Priority"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Priority" android:textSize="18sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal|bold"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content" android:textSize="18sp"
+                            android:layout_height="wrap_content" android:maxLines="2"
+                            android:id="@+id/tv_priority"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp" android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_custName"
+                        android:layout_width="wrap_content" android:textSize="18sp"
+
+                        android:layout_height="wrap_content"
+                        android:text="@string/CustomerName"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_custName"
+                        android:maxLines="2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/lbl_contractCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/STREET_NAME" android:textSize="18sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp"
+                        android:id="@+id/tv_streetname"
+                        android:maxLines="2" /></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/FU_Note"
+                        android:paddingLeft="10dp" android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_custAdd" android:textSize="18sp"
+                        android:maxLines="2" /></LinearLayout>
+
+
+                <LinearLayout android:layout_gravity="right"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_partial"
+                        android:src="@drawable/ic_partial" android:visibility="gone"
+                        app:backgroundTint="@android:color/holo_orange_dark"
+                        app:itemIconTint="@color/colorPrimary"/>
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/btn_deliver"
+                        android:src="@drawable/ic_delive"
+                        app:backgroundTint="@android:color/holo_green_dark" android:visibility="gone"
+                        app:itemIconTint="@android:color/holo_green_dark"/>
+                     <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/ic_not_deliver" android:visibility="gone"
+                        app:backgroundTint="@android:color/holo_red_dark"
+                        app:itemIconTint="@android:color/holo_red_dark"
+                        android:id="@+id/btn_notDeliver"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/ic_action_marker"
+                        app:backgroundTint="@android:color/holo_red_dark"
+                        app:itemIconTint="@android:color/holo_red_dark"
+                        android:id="@+id/btn_routing"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:clickable="false"
+                        android:text="+60.6$"
+                        android:textSize="18sp" android:textStyle="bold"
+                        android:textColor="#fff" android:id="@+id/lbl_bouns" />
+                    <android.support.design.widget.FloatingActionButton android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/ic_add"
+                        app:backgroundTint="@android:color/holo_red_dark"
+                        app:itemIconTint="@android:color/holo_red_dark"
+                        android:id="@+id/btn_assign"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center|right" android:visibility="gone"
+                        android:background="@drawable/border_red" android:layout_margin="2dp"
+                        android:padding="2dp" android:id="@+id/ll_check"
+                        android:layout_height="wrap_content">
+                        <CheckBox android:id="@+id/ch_pilotFound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:checked="false" android:clickable="false"
+                            android:button="@drawable/checkbox_selector"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

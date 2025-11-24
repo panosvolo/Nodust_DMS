@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:background="@drawable/table_row_last_bg"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_margin="5dp"
+    >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tv_lblProductName"
+        tools:text="List Item" android:layout_weight="0.5"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/table_cell_bg"
+
+        android:layout_margin="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:layout_width="match_parent"
+        android:background="@drawable/table_cell_bg"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tv_lblTratmentName"
+        tools:text="List Item" android:layout_weight="0.5"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+  <LinearLayout
+      android:background="@drawable/table_cell_bg"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.5"
+      android:padding="2dp"
+      >
+    <Spinner
+        android:text="2" android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" android:id="@+id/sp_QHandles"
+        android:paddingRight="5dp"
+        android:textColor="@color/colorBlack"/>
+  </LinearLayout>
+
+</LinearLayout>
+    </TableRow>

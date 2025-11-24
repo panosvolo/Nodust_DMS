@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+        android:background="@drawable/table_row_bg"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+            <TextView  android:text="@string/ProductName"
+                android:background="@drawable/table_cell_bg"
+                android:layout_width="0dp" android:layout_weight="1.2"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"/>
+            <LinearLayout
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent" android:layout_gravity="center"
+                android:background="@drawable/table_cell_bg"
+                >
+
+            <Spinner
+                android:text="2" android:gravity="center"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent" android:layout_gravity="center"
+                android:background="@drawable/table_cell_bg"
+                >
+
+                <Spinner
+                    android:text="2" android:gravity="center"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent" android:layout_gravity="center"
+                android:background="@drawable/table_cell_bg"
+                >
+
+                <Spinner
+                    android:text="2" android:gravity="center"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView  android:text="3" android:gravity="center"
+                android:background="@drawable/table_cell_bg"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"/>
+            <Switch android:visibility="gone"
+                android:clickable="false"
+                android:background="@drawable/table_cell_bg"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:switchMinWidth="40dp"
+                android:gravity="center_horizontal" android:layout_gravity="center"
+                android:track="@drawable/switch_track_on_deliver"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:layout_width="0dp" android:layout_weight="1.7"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:textSize="10sp"
+                android:showText="true" />
+            <TextView  android:text="@string/treatment" android:id="@+id/tv_treatment"
+                android:background="@drawable/table_cell_bg"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"/>
+            <TextView  android:text="@string/PNO" android:id="@+id/tv_PNO"
+                android:background="@drawable/table_cell_bg"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </TableRow>

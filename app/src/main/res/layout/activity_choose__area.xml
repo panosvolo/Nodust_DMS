@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_language"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/ll_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay" >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:id="@+id/tv_lng"
+            android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_gravity="center" android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary" android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/SelectArea" />
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_red">
+            <Spinner
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_AreaName"></Spinner></RelativeLayout>
+        <Button android:layout_marginTop="20dp"
+            android:layout_width="200dp" android:id="@+id/btn_update"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:text="@string/SaveChanges"
+
+            android:background="@color/colorPrimaryDark" android:layout_gravity="center" android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

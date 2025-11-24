@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:padding="2dp"
+
+    >
+    <android.support.v7.widget.CardView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardCornerRadius="5dp"
+        android:id="@+id/card" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto" android:visibility="gone"
+                android:id="@+id/iv_Task_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:minWidth="64dp"
+                android:padding="10dp" android:layout_margin="10dp"
+                android:background="@drawable/ic_pilot"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight=".6" >
+
+
+                <LinearLayout
+                    android:layout_margin="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/lbl_ProdutName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp" android:textSize="18sp"
+                        android:text="@string/PilotName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:id="@+id/tv_pilotName" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="5dp">
+
+                   <RatingBar android:visibility="gone"
+                       android:id="@+id/rating_pilot"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:numStars="5" android:stepSize="0"
+                       android:theme="@style/RatingBar"  />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center|right"
+                android:background="@drawable/border_red" android:layout_margin="2dp"
+                android:padding="2dp" android:id="@+id/ll_check"
+                android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/ch_pilotFound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_selector"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
